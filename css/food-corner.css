@@ -1,0 +1,258 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #293E31;
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    width: 25%;
+    height: 100%;
+    background-color: #FE8340;
+    text-align: left;
+    align-items: center;
+    display: flex;
+
+}
+.title h1{
+    margin: auto;
+    cursor: pointer;
+}
+.title h1 p{
+    font-size: 20px;
+    font-weight: 400;
+}   
+.header-options{
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+}
+.header-options ul{
+    display: flex;
+    list-style: none;
+    color: white;
+    gap: 80px;
+    margin-left: 10%;
+}
+.header-options ul li{
+    cursor: pointer;
+    transition: 0.7s;
+}
+.header-options ul li:hover{
+    color: #FE8340;
+    text-shadow: 2px 3px 5px #FE8340;
+}
+.header-options ul button a{
+    color: inherit;
+    text-decoration: none;
+}
+.header-options ul button{
+    height: 30px;
+    border: none;
+    background: none;
+    width: 70px;
+    font-size: 20px;
+    color: #FE8340;
+    display: flex;
+    cursor: pointer;
+    
+}
+.header-options ul button i{
+    margin: 4px 4px 0 0;
+}
+.header-options ul button:hover{
+    transition: 0.4s;
+    font-size: 22px;
+}
+#fix{
+    height: 100px;
+    background-color: #FE8340;
+    position: fixed;
+    right: 0%;
+    top: 0%;
+    object-fit: cover;
+    cursor: pointer;
+    z-index: 1;
+}
+section{
+    width: 100%;
+    height: 900px;
+    background: url(../imgs/gettyimages-1223864488-1024x1024_clipdrop-remove-text.jpg) no-repeat ;
+    text-align: left;
+    background-position: center;
+    background-size: cover;
+}
+.statupline{
+    font-size: 100px;
+    font-weight: 700;
+    padding: 220px 0px 0px 260px ;
+    position: relative;
+    color: #FE8340;
+}
+section p{
+    margin:60px 0px 0px 260px;
+    font-size: 30px;
+    font-weight: 500;
+    background-color: #e97435;
+    width: 30%;
+    color: #293E31;
+}
+section button{
+    margin:60px 0px 0px 260px;
+    height: 5%;
+    width: 9%;
+    background-color: #FE8340;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+    color: #293E31;
+    font-size: 20px;
+}
+section button:hover{
+    background-color: #293E31;
+    color: #FE8340;
+}
+.section2{
+    width: 100%;
+    height: 550px;
+    display: flex;
+
+}
+.s2p1{
+    height: 100%;
+    width: 50%;
+    text-align: left;
+}
+.s2p1 h1{
+    margin: auto;
+    font-size: 40px;
+    margin: 160px 0px 0px 150px;
+    color: #293E31;
+}
+.s2p1 p{
+    margin: 40px 0px 0px 150px;
+    color: #FE8340;
+}
+.s2p1 button{
+    margin: 40px 0px 0px 150px;
+    height: 50px;
+    border: none;
+    width: 130px;
+    font-size: 20px;
+    color: #FE8340;
+    cursor: pointer;
+    background-color: #293E31;
+    transition: 0.5s;
+}
+.s2p1 button:hover{
+    color: #293E31;
+    background-color: #FE8340;
+}
+.s2p2{
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+}
+.s2p2 img{
+    height: 400px;
+    width: 400px;
+    margin-top: 100px;
+}
+.section3{
+    height: 600px;
+    width: 100%;
+    display: block;
+    background: linear-gradient(45deg,#293E31,#FE8340);
+
+}
+.section3 h1{
+    font-size: 35px;
+    font-weight: 500;
+    height: 50px;
+    width: 70%;
+    padding:8% 15% 0% 15%;
+    color: #293E31;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 70%;
+    height: 50%;
+    gap: 20px;
+    margin: 2% 15% 0% 15%;
+}
+.grid-container div{
+    object-fit: contain;
+    overflow: hidden;
+    display: flex;
+
+}
+.grid-container div img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.grid-container div:hover img{
+    transform: scale(1.3);
+}
+.grid-container div button{
+    height: 40px;
+    width: 22.45%;
+    background-color: #FE8340;
+    color: #293E31;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    margin-top: 17.1%;
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+    cursor: pointer;
+
+}
+.grid-container div button:hover{
+    background-color: #293E31;
+    color: #FE8340;
+}
+.grid-container div:hover button{
+    opacity: 1;
+}
+.fiximg{
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    z-index: -1;
+}
+.section4{
+    width: 100%;
+    height: 600px;
+}
+.s4p1{
+    width: 50%;
+    background-color: #293E31;
+    height: 100%;
+}
+.s4p1 img{
+    height: 50%;
+    width: 50%;
+    margin: 22% 20% 0% 20%;
+}
+.section5{
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(45deg,#FE8340,#293E31);
+}
+
